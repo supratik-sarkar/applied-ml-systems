@@ -1,0 +1,21 @@
+# ===== Core (required) =====
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scikit-learn>=1.3
+scipy>=1.10
+statsmodels>=0.14
+requests>=2.31
+openpyxl>=3.1  # Excel reading support
+
+# ===== Optional features =====
+# Prophet-based residual methods (time_series_anomaly.py -> decomposition(method="prophet"))
+# NOTE: On some systems Prophet needs a working C++ toolchain; install only if needed.
+prophet>=1.1
+
+# Matrix Profile (univariate subsequence/discord via stumpy)
+stumpy>=1.11
+
+# ===== Nice-to-have for local notebooks (omit if you already have Jupyter) =====
+# jupyter>=1.0
+# jupyterlab>=4.0
