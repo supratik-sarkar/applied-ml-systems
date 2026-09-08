@@ -1,0 +1,4 @@
+﻿scikit-learn>=1.5
+optuna>=3.6
+mlflow>=2.15
+numpy>=1.26
