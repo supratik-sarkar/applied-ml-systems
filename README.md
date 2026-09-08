@@ -64,7 +64,18 @@ Across the four engineering umbrellas, 417 modern-component tests pass, plus thi
 
 ---
 
-## Git Tags & Provenance Anchor
+## Historical Lineage & Provenance
+
+This repository is anchored on the genuine 2025 `anomaly_detection` GitHub repository object. Historical constituent projects are preserved under `legacy/`:
+* `legacy/anomaly-detection/`: Statistical & unsupervised tabular/time-series anomaly detection.
+* `legacy/optimization-hpo/`: Convex optimization, Bayesian optimization & natural gradient HPO.
+* `legacy/recommenders/`: Field-aware factorization machines (FFM) & neural collaborative filtering.
+
+In September 2026, the repository was transitioned into the `applied-ml-systems` umbrella with un-squashed Git commit histories.
+
+See [HISTORY.md](HISTORY.md) for full lineage proofs, earliest commit timestamps, component tags, and commit links.
+
+### Git Tags & Provenance Anchor
 
 Original historical repository commit tips are preserved via tags:
 * `legacy/anomaly-detection-2025`
