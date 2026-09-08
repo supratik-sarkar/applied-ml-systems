@@ -54,10 +54,13 @@ Each legacy subsystem preserves its genuine reproducibility paths and tests:
 ./scripts/verify_all.sh
 ```
 
-The script verifies:
-1. Syntax and static analysis across all Python modules;
-2. Unit tests where present (`legacy/optimization-hpo/tests/`, `legacy/recommenders/tests/`);
-3. Executable module import sanity.
+The script executes:
+1. Strict Python 3.12.13 version confirmation (fails closed on mismatch);
+2. Syntax and static compilation across anomaly detection modules (`non_time_series_anomaly.py`, `time_series_anomaly.py`);
+3. Unit test execution in `legacy/optimization-hpo/tests/` (1 test passed);
+4. Unit test execution in `legacy/recommenders/tests/` (1 test passed).
+
+Across the four engineering umbrellas, 417 modern-component tests pass, plus this archive's 2 historical unit tests and 2 anomaly-module syntax checks.
 
 ---
 
